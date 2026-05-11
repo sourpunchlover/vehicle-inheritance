@@ -3,12 +3,28 @@ package com.pluralsight;
 public class Vehicle {
     //class properties
     private String color, engineType, bodyFrame;
-    int numberOfPassengers, cargoCapacity, fuelCapacity, numberOfSeats, wheelType;
-    double price;
-    boolean isGasOnly, hasSteeringControl, hasWheels, hasSeatBelts;
+    private int numberOfPassengers, cargoCapacity, fuelCapacity, numberOfSeats, wheelType;
+    private double price;
+    private boolean isGasOnly, hasSteeringControl, hasWheels, hasSeatBelts;
+
+    //constructor
+    public Vehicle(String color, String engineType, String bodyFrame, int numberOfPassengers, int cargoCapacity, int fuelCapacity, int numberOfSeats, int wheelType, double price, boolean isGasOnly, boolean hasSteeringControl, boolean hasWheels, boolean hasSeatBelts) {
+        this.color = color;
+        this.engineType = engineType;
+        this.bodyFrame = bodyFrame;
+        this.numberOfPassengers = numberOfPassengers;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
+        this.numberOfSeats = numberOfSeats;
+        this.wheelType = wheelType;
+        this.price = price;
+        this.isGasOnly = isGasOnly;
+        this.hasSteeringControl = hasSteeringControl;
+        this.hasWheels = hasWheels;
+        this.hasSeatBelts = hasSeatBelts;
+    }
 
     //getters & setters
-
     public String getColor() {
         return color;
     }
